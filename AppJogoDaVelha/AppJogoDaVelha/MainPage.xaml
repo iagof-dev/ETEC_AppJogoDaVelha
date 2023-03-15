@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppJogoDaVelha.MainPage">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="MediumPurple" Offset="0.0" />
+            <GradientStop Color="Purple" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+
+
+    <ContentPage.Resources>
+
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="Transparent" />
+            <Setter Property="BorderColor" Value="White" />
+            <Setter Property="BorderWidth" Value="2" />
+            <Setter Property="CornerRadius" Value="10" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="FontSize" Value="70" />
+
+        </Style>
+        
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="*,*,*,*,*" ColumnDefinitions="*,*,*">
+
+        <Label Grid.Row="0" Margin="0,0,0,0" Grid.Column="0" Grid.ColumnSpan="3" TextColor="HotPink" Text="JOGO DA VELHA" FontSize="32" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+        <Button CornerRadius="10" x:Name="btn10" TextColor="Black" Grid.Row="1" Grid.Column="0" Clicked="Button_Clicked" />
+        <Button CornerRadius="10" x:Name="btn11" TextColor="Black" Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked"/>
+        <Button CornerRadius="10" x:Name="btn12" TextColor="Black" Grid.Row="1" Grid.Column="2" Clicked="Button_Clicked"/>
+
+
+        <Button CornerRadius="10" x:Name="btn20" TextColor="Black" Grid.Row="2" Grid.Column="0" Clicked="Button_Clicked"/>
+        <Button CornerRadius="10" x:Name="btn21" TextColor="Black" Grid.Row="2" Grid.Column="1" Clicked="Button_Clicked"/>
+        <Button CornerRadius="10" x:Name="btn22" TextColor="Black" Grid.Row="2" Grid.Column="2" Clicked="Button_Clicked"/>
+
+
+        <Button CornerRadius="10" x:Name="btn30" TextColor="Black" Grid.Row="3" Grid.Column="0" Clicked="Button_Clicked"/>
+        <Button CornerRadius="10" x:Name="btn31" TextColor="Black" Grid.Row="3" Grid.Column="1" Clicked="Button_Clicked"/>
+        <Button CornerRadius="10" x:Name="btn32" TextColor="Black" Grid.Row="3" Grid.Column="2" Clicked="Button_Clicked"/>
+
+    </Grid>
+    
+</ContentPage>
